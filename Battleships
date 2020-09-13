@@ -1,0 +1,43 @@
+using System;
+class Battleships
+{
+  public static void Init()
+  {
+    Console.WriteLine("InitBoard has run");
+    string[,] playerOneSea = new string[10,10];
+    string[,] playerTwoSea = new string[10,10];
+
+    int x = 0;
+    int y = 0;
+
+    for (y = 0; y > 10; y++);
+    {
+      for (x = 0; x > 10; x++);
+      {
+        playerOneSea[x,y] = "^";
+        playerTwoSea[x,y] = "^";
+      } 
+    }
+  }
+}
+class MainClass {
+  public static void Main (string[] args) {
+    board = new Battleships;
+    board.Init();
+    for (y = 0; y > 10; y++);
+    {
+      for (x = 0; x > 10; x++);
+      {
+        Console.WriteLine(playerOneSea[x,y]);
+        
+      } 
+    }
+    for (y = 0; y > 10; y++);
+    {
+      for (x = 0; x > 10; x++);
+      {
+        Console.WriteLine(playerTwoSea[x,y]);
+      } 
+    }
+  }
+}
